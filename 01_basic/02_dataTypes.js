@@ -19,7 +19,7 @@ let state;
 //bigint
 //string => ""
 //boolean => true/false
-//null => stabdalone value
+//null => standalone value
 //undefined =>
 //symbol => to find uniqueness 
 
@@ -29,4 +29,5 @@ let state;
 console.log(typeof("mayank"))
 console.log(typeof(null)) //=> object
 console.log(typeof(undefined)) // => undefined
+console.log(3+3)
 //node 01_basic/02_dataTypes.js
