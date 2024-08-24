@@ -23,25 +23,47 @@ const anotherId = Symbol('123')
 
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
-let myObj = {
-    name: "hitesh",
-    age: 22,
-}
+// const heros = ["shaktiman", "naagraj", "doga"];
+// let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
 
-const myFunction = function(){
-    console.log("Hello world");
-}
+// const myFunction = function(){
+//     console.log("Hello world");
+// }
 
-console.log(typeof score);// number
-console.log(typeof scoreValue); // number
-console.log(typeof isLoggedIn);//boolean
-console.log(typeof outsideTemp);//object
-console.log(typeof userEmail); // undefined
-console.log(typeof id); //symbol
-console.log(typeof anotherId); // symbol
-console.log(typeof heros); // object
-console.log(typeof myObj); // object
-console.log(typeof myFunction); // function
+// console.log(typeof score);// number
+// console.log(typeof scoreValue); // number
+// console.log(typeof isLoggedIn);//boolean
+// console.log(typeof outsideTemp);//object
+// console.log(typeof userEmail); // undefined
+// console.log(typeof id); //symbol
+// console.log(typeof anotherId); // symbol
+// console.log(typeof heros); // object
+// console.log(typeof myObj); // object
+// console.log(typeof myFunction); // function
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//#####################################################
+
+// stack -> primitive 
+// Heap -> non primitive
+
+ let myName = "mayank"
+ let anotherName = myName
+ anotherName = "Sanu"
+
+ console.log(myName); // mayank
+ console.log(anotherName); // sanu
+
+ let user ={
+    email: "xyz@gmail.com",
+    name: "xyz"
+ }
+ let user1 = user
+
+ user1.email = "sanu@gmail.com"
+ console.log(user.email); // sanu@gmail.com
+ console.log(user1.email);// sanu@gmail.com
